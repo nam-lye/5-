@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>건강습관 체크</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🧡 건강습관 체크</h1>
+    <label>반:
+      <select id="class-select">
+        <option value="5-1">5-1반</option>
+        <option value="5-2">5-2반</option>
+        <option value="5-3">5-3반</option>
+      </select>
+    </label>
+    <label>이름:
+      <input type="text" id="student-name" placeholder="이름을 입력하세요" />
+    </label>
+
+    <div class="habits">
+      <label><input type="checkbox" class="habit" /> 아침밥 먹기</label>
+      <label><input type="checkbox" class="habit" /> 물 5잔 이상 마시기</label>
+      <label><input type="checkbox" class="habit" /> 야채 골고루 먹기</label>
+      <label><input type="checkbox" class="habit" /> 운동 30분 이상</label>
+      <label><input type="checkbox" class="habit" /> 스마트폰 적게 사용</label>
+    </div>
+
+    <button onclick="submitData()">제출하기</button>
+    <p id="message"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
